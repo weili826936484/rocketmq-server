@@ -38,6 +38,8 @@ public class loginController {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }finally {
+            messageProducer.shutdown();
         }
         return result;
     }
